@@ -5,3 +5,11 @@
 
 For install:
 	sudo npm install -g brain-games-shapurid
+	
+For launch:
+	brain-games
+	
+<a href="https://asciinema.org/a/J3Rh4ABLfbBSGIY8RWDshvUnM" target="_blank"><img src="https://asciinema.org/a/J3Rh4ABLfbBSGIY8RWDshvUnM.svg" /></a>
+	
+For uninstall:
+	sudo npm uninstall -g brain-games-shapurid
