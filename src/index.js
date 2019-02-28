@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
 import brainEven from './games/even-game';
+import brainCalc from './games/calc-game';
 
 export const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
@@ -44,6 +45,9 @@ export const chooseTheGame = () => {
   switch (choice) {
     case '1':
       brainEven();
+      break;
+    case '2':
+      brainCalc();
       break;
     case '0':
       break;
