@@ -18,7 +18,10 @@ If you want to play Brain Even and pass choosing:
 If you want to play Brain Calc and pass choosing:
 	brain-calc
 <a href="https://asciinema.org/a/owEBhpH3eGsnb6Kepldk4Rlkz" target="_blank"><img src="https://asciinema.org/a/owEBhpH3eGsnb6Kepldk4Rlkz.svg" /></a>
-	
+
+If you want to play Brain GCD and pass choosing:
+[![asciicast](https://asciinema.org/a/pqDLmc8vhQvFePnY9bQuvtFRb.svg)](https://asciinema.org/a/pqDLmc8vhQvFePnY9bQuvtFRb)
+
 For uninstall:
 	sudo npm uninstall -g brain-games-shapurid
 <a href="https://asciinema.org/a/3mhOBN9bTIm5b7im7DER7ckRs" target="_blank"><img src="https://asciinema.org/a/3mhOBN9bTIm5b7im7DER7ckRs.svg" /></a>
