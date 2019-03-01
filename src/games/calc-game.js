@@ -1,25 +1,29 @@
-import { randomNumber, makePairQuestionAnswer, gameBuild } from '..';
+import gameBuild from '..';
+import { randomNumber, makePairQuestionAnswer } from '../utils';
 
-const rules = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const game = () => {
   const num1 = randomNumber(1, 99);
   const num2 = randomNumber(1, 99);
   const charOfExpression = randomNumber(0, 2);
   let question;
-  let answer;
-  if (charOfExpression === 0) {
-    question = `${num1} + ${num2}`;
-    answer = String(num1 + num2);
-  } else if (charOfExpression === 1) {
-    question = `${num1} - ${num2}`;
-    answer = String(num1 - num2);
-  } else {
-    question = `${num1} - ${num2}`;
-    answer = String(num1 - num2);
+  let rightAnswer;
+  switch (charOfExpression) {
+    case 0:
+      question = `${num1} + ${num2}`;
+      rightAnswer = String(num1 + num2);
+      break;
+    case 1:
+      question = `${num1} - ${num2}`;
+      rightAnswer = String(num1 - num2);
+      break;
+    default:
+      question = `${num1} * ${num2}`;
+      rightAnswer = String(num1 * num2);
+      break;
   }
-  return makePairQuestionAnswer(question, answer);
+  return makePairQuestionAnswer(question, rightAnswer);
 };
 
-const brainCalc = () => gameBuild(rules, game);
-export default brainCalc;
+export default () => gameBuild(description, game);

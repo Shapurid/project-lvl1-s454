@@ -1,12 +1,14 @@
-import { randomNumber, makePairQuestionAnswer, gameBuild } from '..';
+import gameBuild from '..';
+import { randomNumber, makePairQuestionAnswer } from '../utils';
 
-const rules = 'Answer "yes" if number even otherwise answer "no".';
+const isEven = num => num % 2 === 0;
+
+const description = 'Answer "yes" if number even otherwise answer "no".';
 
 const game = () => {
   const question = randomNumber(1, 99);
-  const answer = question % 2 === 0 ? 'yes' : 'no';
-  return makePairQuestionAnswer(question, answer);
+  const rightAnswer = isEven(question) ? 'yes' : 'no';
+  return makePairQuestionAnswer(question, rightAnswer);
 };
 
-const brainEven = () => gameBuild(rules, game);
-export default brainEven;
+export default () => gameBuild(description, game);

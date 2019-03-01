@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { chooseTheGame } from '..';
+import chooseTheGame from '../games/main-menu';
 
 chooseTheGame();
