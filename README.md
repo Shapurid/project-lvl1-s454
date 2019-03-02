@@ -25,6 +25,9 @@ If you want to play Brain GCD and pass choosing:
 If you want to play Brain Progression and pass choosing:
 [![asciicast](https://asciinema.org/a/BTxUy3sX5iFSDdVXLYgcXnri4.svg)](https://asciinema.org/a/BTxUy3sX5iFSDdVXLYgcXnri4)
 
+If you want to play Brain Prime and pass choosing:
+[![asciicast](https://asciinema.org/a/R2MzzZZAsmCfLETedrXH5Di4f.svg)](https://asciinema.org/a/R2MzzZZAsmCfLETedrXH5Di4f)
+
 For uninstall:
 	sudo npm uninstall -g brain-games-shapurid
 [![asciicast](https://asciinema.org/a/3mhOBN9bTIm5b7im7DER7ckRs.svg)](https://asciinema.org/a/3mhOBN9bTIm5b7im7DER7ckRs)

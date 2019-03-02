@@ -3,9 +3,10 @@ import brainEven from './even-game';
 import brainCalc from './calc-game';
 import brainGcd from './gcd-game';
 import brainProgression from './progression-game';
+import brainPrime from './prime-game';
 
 const chooseTheGame = () => {
-  console.log('List of the games:\n1. Brain Even\n2. Brain Calc\n3. Brain GCD\n4. Brain Progression\n');
+  console.log('List of the games:\n1. Brain Even\n2. Brain Calc\n3. Brain GCD\n4. Brain Progression\n5. Brain Prime\n');
   console.log('If you want to exit, enter 0.\n');
   const choice = readlineSync.question('Please, enter the number of the game: ');
   switch (choice) {
@@ -20,6 +21,9 @@ const chooseTheGame = () => {
       break;
     case '4':
       brainProgression();
+      break;
+    case '5':
+      brainPrime();
       break;
     case '0':
       break;
