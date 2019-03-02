@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
-import brainEven from './even-game';
-import brainCalc from './calc-game';
-import brainGcd from './gcd-game';
-import brainProgression from './progression-game';
-import brainPrime from './prime-game';
+import brainEven from './even';
+import brainCalc from './calc';
+import brainGcd from './gcd';
+import brainProgression from './progression';
+import brainPrime from './prime';
 
 const chooseTheGame = () => {
   console.log('List of the games:\n1. Brain Even\n2. Brain Calc\n3. Brain GCD\n4. Brain Progression\n5. Brain Prime\n');
