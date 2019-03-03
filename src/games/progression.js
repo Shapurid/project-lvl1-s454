@@ -8,7 +8,7 @@ const lengthOfProgression = 10;
 const game = () => {
   const startOfProgression = randomNumber(1, 99);
   const step = randomNumber(2, 10);
-  const hiddenElementPosition = randomNumber(2, lengthOfProgression);
+  const hiddenElementPosition = randomNumber(1, lengthOfProgression);
   const findHiddenElementPosition = startOfProgression + step * (hiddenElementPosition - 1);
   let progression = '';
   for (let i = 1; i <= lengthOfProgression; i += 1) {
