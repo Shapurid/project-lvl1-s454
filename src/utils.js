@@ -4,6 +4,6 @@ export const randomNumber = (min, max) => Math.floor(Math.random() * (max - min 
 
 export const makePairQuestionAnswer = (question, answer) => cons(question, answer);
 
-export const getQuestion = pair => car(pair);
+export const getQuestion = (pair) => car(pair);
 
-export const getAnswer = pair => cdr(pair);
+export const getAnswer = (pair) => cdr(pair);
